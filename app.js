@@ -4,6 +4,6 @@ var app = require('./config/server');
 //var rotaForm = require('./app/routes/formulario_inclusao_noticia')(app);
 //var rotaNoticias = require('./app/routes/noticias')(app);
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor On");
 })
